@@ -1,0 +1,98 @@
+var edad =23;
+
+var punto_flotantes = 12.5;
+
+
+/*
+Operadores Aritmeticos
+Division = /
+Multiplicacion = *
+Suma = +
+Resta = -
+Modulo = %
+*/
+
+var resultado_suma =edad % 2;
+console.log(resultado_suma);
+
+
+console.log(es_par(3));
+
+
+function es_par(numero){
+   if(numero % 2 == 0){
+      return true;
+   }
+   return false;
+ }
+
+
+console.log(Math.sqrt(4));
+
+
+
+
+
+CODIGO DEL VIDEO#3
+
+var nombre = "Uriel";
+
+//var cadena = 'Hola '+ nombre;
+
+//var resultado =
+cadena.indexOf("codigofacilito");
+
+//console.log(resultado);
+/*
+if(nombre.indexOf("Uriel") != -1){
+   console.log("Eres el tutor del curso")
+}else{
+   console.log("No eres el tutor del curso");
+}
+*/
+//console.log(nombre.charAt(1));
+
+//nombre = nombre.replace("U","A");
+
+//console.log(nombre);
+
+
+//console.log(nombre.slice(0,2));
+
+console.log(nombre.toUpperCase());
+
+console.log(nombre.toLowerCase());
+
+
+
+
+
+CODIGO DEL VIDEO #4
+
+var numero_uno = 30;
+
+var numero_dos = "30";
+
+if(numero_:uno !==numero_dos){
+   console.log("Devuelve falso")
+}else if(false){
+
+}
+else if(false){
+
+}
+else{
+   console.log(":P");
+}
+
+//bool > true / false 
+
+/* Operaciones logicos */
+//> Mayor que 
+//< Menor que
+// || OR
+// == ====
+//!= !==
+//!
+	
+

@@ -1,0 +1,66 @@
+La instrucción for permite repetir una instrucción o una instrucción compuesta un número especificado de veces. El cuerpo de una instrucción for se ejecuta cero o más veces hasta que una condición opcional sea false. Puede utilizar expresiones opcionales dentro de la instrucción for para inicializar y cambiar valores durante la ejecución de la instrucción for.
+
+Sintaxis
+iteration-statement:
+ for(init-expressionopt;cond-expressionopt;loop-expressionopt)statement
+
+La ejecución de una instrucción for continúa como sigue:
+
+init-expression, si existe, se evalúa. Especifica la inicialización del bucle. No hay ninguna restricción sobre el tipo de init-expression.
+
+cond-expression, si existe, se evalúa. Esta expresión debe tener un tipo aritmético o de puntero. Se evalúa antes de cada iteración. Se pueden producir tres resultados:
+
+Si cond-expression es true (distinta de cero), se ejecuta statement; a continuación, se evalúa loop-expression, si existe. loop-expression se evalúa después de cada iteración. No hay restricciones sobre su tipo. Los efectos secundarios se ejecutarán en orden. Entonces, comienza de nuevo el proceso con la evaluación de cond-expression.
+
+Si se omite cond-expression, cond-expression se considera true, y la ejecución continúa exactamente como se ha descrito en el párrafo anterior. Una instrucción for sin un argumento cond-expression solo finaliza cuando se ejecuta una instrucción break o return dentro del cuerpo de la instrucción o cuando se ejecuta goto (para una instrucción con etiqueta fuera del cuerpo de la instrucción for).
+
+Si cond-expression es false (0), la ejecución de la instrucción for termina y se pasa el control a la siguiente instrucción del programa.
+
+Una instrucción for también finaliza cuando se ejecuta una instrucción break, goto o return dentro del cuerpo de la instrucción. Una instrucción continue en un bucle for hace que se evalúe loop-expression. Cuando se ejecuta una instrucción break dentro de un bucle for, loop-expression no se evalúa ni se ejecuta. Esta instrucción
+
+C
+
+Copiar
+for( ; ; )
+es la forma habitual de generar un bucle infinito del que solo se puede salir con una instrucción break, goto o return.
+
+Ejemplo
+En este ejemplo se ilustra la instrucción for:
+
+C
+
+Copiar
+// c_for.c
+int main()
+{
+   char* line = "H e  \tl\tlo World\0";
+   int space = 0;
+   int tab = 0;
+   int i;
+   int max = strlen(line);
+   for (i = 0; i < max; i++ )
+   {
+      if ( line[i] == ' ' )
+      {
+          space++;
+      }
+      if ( line[i] == '\t' )
+      {
+          tab++;
+      }
+   }
+
+   printf("Number of spaces: %i\n", space);
+   printf("Number of tabs: %i\n", tab);
+   return 0;
+}
+QUE ES while?
+El bucle while o bucle mientras es un ciclo repetitivo basado en los resultados de una expresión lógica; se encuentra en la mayoría de los lenguajes de programación estructurados. El propósito es repetir un bloque de código mientras una condición se mantenga verdadera.
+
+Un if en programación se utiliza para evaluar una expresión condicional: si se cumple la condición (es verdadera), ejecutará un bloque de código. Si es falsa, es posible ejecutar otras sentencias.
+QUE ES IF?
+Como hemos dicho, la condición es una condición lógica, sólo devolverá true o false, y se ejecutará si su valor es true.
+
+Case es un conjunto de herramientas que contiene programas y aplicaciones informáticas diseñados con la finalidad de generar mayor productividad, brindar facilidades de uso que ahorran tiempo y dinero en el desarrollo de softwares o nuevas aplicaciones.
+QUE ES CASE?
+La palabra CASE es el resultado de las siglas en inglés Computer Aided Software Engineering, que en español quiere decir ingeniería de software asistida por ordenador

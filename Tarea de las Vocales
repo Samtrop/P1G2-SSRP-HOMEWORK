@@ -1,0 +1,76 @@
+<!DOCTYPEhtml >
+<html> _ _
+< cuerpo >
+
+< h2 > Tarea 2.5 - UPC </ H2 >
+
+< p > Bienvenido Christian </ p >
+
+< button  onclick =" myTercerAlgoritmo() " > boton en HTML </ button >
+
+< guión >
+function  ExisteA ( nombre )  {
+    if  ( nombre . incluye ( "a" ) )  {
+        volver  verdadero
+    } más {
+        devolver  falso
+    }
+}
+function  ExisteE ( nombre )  {
+    if  ( nombre . incluye ( "e" ) )  {
+        volver  verdadero
+    } más {
+        devolver  falso
+    }
+}
+ existe la funcion ( nombre )  {
+    if  ( nombre . incluye ( "i" ) )  {
+        volver  verdadero
+    } más {
+        devolver  falso
+    }
+}
+function  ExisteO ( nombre )  {
+    if  ( nombre . incluye ( "o" ) )  {
+        volver  verdadero
+    } más {
+        devolver  falso
+    }
+}
+function  ExisteU ( nombre )  {
+    if  ( nombre . incluye ( "u" ) )  {
+        volver  verdadero
+    } más {                                                                                                                                                                                              
+        devolver  falso
+    }
+}
+
+
+function  myTercerAlgoritmo ( )  {
+   var  nombre  =  "CRISTIANO"
+    
+   si ( ExisteA ( nombre ) )  {
+       alerta ( nombre  +  "Existe la vocal (A)" )
+    } más {   
+        si ( ExisteE ( nombre ) )  {      
+            alerta ( nombre  +  "Existe la vocal (E)" )
+        } más {  
+            si ( ExisteI ( nombre ) )  {
+                alerta ( nombre  +  "Existe la vocal (I)" ) 
+            } más {    
+                si ( ExisteO ( nombre ) )  {
+                alerta ( nombre  +  "Existe la vocal (O)" ) 
+                } más {   
+                    si ( ExisteU ( nombre ) )  {
+                    alerta ( nombre  +  "Existe la vocal (U)" ) 
+                    } más {   
+                        alerta ( "No existe la vocal (A,E,I,O,U)" )
+                    }   
+                }   
+            }
+        }
+    }   
+} 
+  </ guión >
+  </ cuerpo >
+  </html> _ _
